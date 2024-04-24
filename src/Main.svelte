@@ -1,7 +1,7 @@
 <script>
 export let answer='Shy';
 
-let index = Math.floor(Math.random() * 101);
+let index = Math.floor(Math.random() * 100);
 
 let src = `./images/${answer}/${index}.png`;
 </script>
