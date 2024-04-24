@@ -3,7 +3,7 @@ export let answer='Shy';
 
 let index = Math.floor(Math.random() * 100);
 
-let src = `./images/${answer}/${index}.png`;
+let src = `images/${answer}/${index}.png`;
 </script>
 
 <img src ={src} alt="img"/>
