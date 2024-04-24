@@ -18,6 +18,8 @@ export let disabledbutton;
     cursor: pointer; /* Cursor style */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
     transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 20px;
+    padding: 15px 25px;
   }
 
   .quiz-button:hover {

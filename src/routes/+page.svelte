@@ -18,7 +18,10 @@
 </script>
 
 <div class="container">
+    <div class='image-div'>
     <Main answer={answerarr[answerindex]}/>
+
+    </div>
 
     <div class="options-row">
         <Quiz id=0 label='Contemplative' onclick={()=>CheckAnswer(0)} disabledbutton={displayanswer}/>
@@ -44,8 +47,12 @@
     :global(body) {
         margin: 0;
         padding: 0;
-        background-color: #ecfccb; 
-        font-family: 'Comic Sans MS', cursive; 
+        background-color: #18181b; 
+        font-family: 'Comic Sans MS', cursive;
+    }
+
+    p{
+        font-size: x-large;
     }
 
 
@@ -55,8 +62,11 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
 
+    }
+    .image-div{
+        margin-bottom: 20px;
     }
 
     .options-row {

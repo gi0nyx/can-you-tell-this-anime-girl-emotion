@@ -1,9 +1,9 @@
 <script>
 export let answer='Shy';
 
-let index = Math.floor(Math.random() * 2);
+let index = Math.floor(Math.random() * 101);
 
-let src = `images/${answer}/${index}.png`;
+let src = `./images/${answer}/${index}.png`;
 </script>
 
 <img src ={src} alt="img"/>
