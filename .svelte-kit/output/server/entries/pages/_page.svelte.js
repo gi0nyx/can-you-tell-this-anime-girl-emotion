@@ -1,12 +1,12 @@
 import { c as create_ssr_component, d as add_attribute, e as escape, v as validate_component } from "../../chunks/ssr.js";
 const css$2 = {
   code: "img.svelte-1qetggp{width:800px;height:800px;display:block;margin:0 auto}",
-  map: '{"version":3,"file":"Main.svelte","sources":["Main.svelte"],"sourcesContent":["<script>\\nexport let answer=\'Shy\';\\n\\nlet index = Math.floor(Math.random() * 100);\\n\\nlet src = `./images/${answer}/${index}.png`;\\n<\/script>\\n\\n<img src ={src} alt=\\"img\\"/>\\n\\n<style>\\n    img {\\n      width: 800px; \\n      height: 800px;\\n      display: block; \\n      margin: 0 auto; \\n    }\\n</style>"],"names":[],"mappings":"AAWI,kBAAI,CACF,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,OAAO,CAAE,KAAK,CACd,MAAM,CAAE,CAAC,CAAC,IACZ"}'
+  map: '{"version":3,"file":"Main.svelte","sources":["Main.svelte"],"sourcesContent":["<script>\\nexport let answer=\'Shy\';\\n\\nlet index = Math.floor(Math.random() * 100);\\n\\nlet src = `images/${answer}/${index}.png`;\\n<\/script>\\n\\n<img src ={src} alt=\\"img\\"/>\\n\\n<style>\\n    img {\\n      width: 800px; \\n      height: 800px;\\n      display: block; \\n      margin: 0 auto; \\n    }\\n</style>"],"names":[],"mappings":"AAWI,kBAAI,CACF,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,OAAO,CAAE,KAAK,CACd,MAAM,CAAE,CAAC,CAAC,IACZ"}'
 };
 const Main = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { answer = "Shy" } = $$props;
   let index = Math.floor(Math.random() * 100);
-  let src = `./images/${answer}/${index}.png`;
+  let src = `images/${answer}/${index}.png`;
   if ($$props.answer === void 0 && $$bindings.answer && answer !== void 0)
     $$bindings.answer(answer);
   $$result.css.add(css$2);
