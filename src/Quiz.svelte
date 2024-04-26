@@ -3,13 +3,15 @@ export let label;
 export let id;
 export let onclick;
 export let disabledbutton;
+export let background_color = '#ffffff';
 </script>
-<button class="quiz-button" on:click={onclick} id="{id}" disabled={disabledbutton}>{label}</button>
+<button class="quiz-button" on:click={onclick} id="{id}" disabled={disabledbutton} style="background-color: {background_color};">{label}</button>
 
 <style>
   .quiz-button {
+    width: 150px;
+    height: 50px;
     margin-right: 10px;
-    background-color: #ffffff; /* Light background color */
     color: #333333; /* Text color */
     border: 2px solid #666666; /* Border color */
     border-radius: 5px; /* Rounded corners */
@@ -17,7 +19,7 @@ export let disabledbutton;
     font-size: 16px; /* Font size */
     cursor: pointer; /* Cursor style */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition */
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s; /* Smooth transition */
     border-radius: 20px;
     padding: 15px 25px;
   }

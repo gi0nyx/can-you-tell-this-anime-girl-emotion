@@ -10,8 +10,8 @@ let src = `images/${answer}/${index}.png`;
 
 <style>
     img {
-      width: 800px; 
-      height: 800px;
+      width: 600px; 
+      height: 600px;
       display: block; 
       margin: 0 auto; 
     }
