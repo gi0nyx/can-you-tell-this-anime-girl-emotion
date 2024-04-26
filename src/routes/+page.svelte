@@ -112,6 +112,7 @@
 
 
     :global(body) {
+        transform: scale(0.8);
         margin: 0;
         padding: 0;
         background-color: #18181b; 
