@@ -15,4 +15,12 @@ let src = `images/${answer}/${index}.png`;
       display: block; 
       margin: 0 auto; 
     }
+
+    @media (max-width: 600px) {
+    img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+
 </style>
